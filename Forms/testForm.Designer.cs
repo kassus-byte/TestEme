@@ -1,6 +1,6 @@
 ﻿namespace TestEme
 {
-    partial class Form1
+    partial class testForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,35 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
+            label1 = new Label();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(206, 120);
+            label1.Name = "label1";
+            label1.Size = new Size(65, 15);
+            label1.TabIndex = 0;
+            label1.Text = "yey u did it";
+            // 
             // pictureBox1
             // 
             pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = Properties.Resources.login;
+            pictureBox1.Image = Properties.Resources.dk_incredibles;
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1920, 1080);
-            pictureBox1.TabIndex = 0;
+            pictureBox1.Size = new Size(1343, 599);
+            pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
-            // Form1
+            // testForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1920, 1080);
+            ClientSize = new Size(1343, 599);
             Controls.Add(pictureBox1);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "Form1";
-            Text = "Form1";
+            Controls.Add(label1);
+            Name = "testForm";
+            Text = "testForm";
+            Load += testForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
+        private Label label1;
         private PictureBox pictureBox1;
     }
 }

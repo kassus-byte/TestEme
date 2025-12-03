@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace TestEme
 {
-    public partial class Form1 : Form
+    public partial class testForm : Form
     {
-        public Form1()
+        public testForm()
         {
             InitializeComponent();
+        }
+
+        private void testForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
