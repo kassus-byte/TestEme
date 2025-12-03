@@ -1,6 +1,6 @@
 ﻿namespace TestEme
 {
-    partial class Form1
+    partial class loginPage
     {
         /// <summary>
         ///  Required designer variable.
@@ -30,6 +30,8 @@
         {
             label1 = new Label();
             pictureBox1 = new PictureBox();
+            roundCornersTextBox1 = new roundCornersTextBox();
+            roundCornersTextBox2 = new roundCornersTextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -51,16 +53,45 @@
             pictureBox1.Size = new Size(1920, 1080);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
-            // Form1
+            // roundCornersTextBox1
+            // 
+            roundCornersTextBox1.BackColor = Color.White;
+            roundCornersTextBox1.BorderColor = Color.Gray;
+            roundCornersTextBox1.BorderFocusColor = Color.Black;
+            roundCornersTextBox1.BorderRadius = 35;
+            roundCornersTextBox1.Location = new Point(1243, 399);
+            roundCornersTextBox1.Name = "roundCornersTextBox1";
+            roundCornersTextBox1.Padding = new Padding(10, 7, 10, 7);
+            roundCornersTextBox1.Size = new Size(325, 59);
+            roundCornersTextBox1.TabIndex = 2;
+            roundCornersTextBox1.Texts = "";
+            // 
+            // roundCornersTextBox2
+            // 
+            roundCornersTextBox2.BackColor = Color.White;
+            roundCornersTextBox2.BorderColor = Color.Gray;
+            roundCornersTextBox2.BorderFocusColor = Color.Black;
+            roundCornersTextBox2.BorderRadius = 35;
+            roundCornersTextBox2.Location = new Point(1243, 586);
+            roundCornersTextBox2.Name = "roundCornersTextBox2";
+            roundCornersTextBox2.Padding = new Padding(10, 7, 10, 7);
+            roundCornersTextBox2.Size = new Size(325, 59);
+            roundCornersTextBox2.TabIndex = 3;
+            roundCornersTextBox2.Texts = "";
+            // 
+            // loginPage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(roundCornersTextBox2);
+            Controls.Add(roundCornersTextBox1);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form1";
+            Name = "loginPage";
             Text = "login";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -71,5 +102,7 @@
 
         private Label label1;
         private PictureBox pictureBox1;
+        private roundCornersTextBox roundCornersTextBox1;
+        private roundCornersTextBox roundCornersTextBox2;
     }
 }
