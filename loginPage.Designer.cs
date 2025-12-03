@@ -96,9 +96,9 @@
             loginButton.BorderRadius = 30;
             loginButton.FlatAppearance.BorderSize = 0;
             loginButton.FlatStyle = FlatStyle.Flat;
-            loginButton.Font = new Font("Verdana", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            loginButton.Font = new Font("Open Sans Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             loginButton.HoverColor = Color.LightGray;
-            loginButton.Location = new Point(1402, 754);
+            loginButton.Location = new Point(1401, 752);
             loginButton.Name = "loginButton";
             loginButton.Size = new Size(166, 56);
             loginButton.TabIndex = 5;
