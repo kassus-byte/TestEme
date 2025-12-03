@@ -33,7 +33,7 @@
             pictureBox1 = new PictureBox();
             roundCornersTextBox1 = new roundCornersTextBox();
             roundCornersTextBox2 = new roundCornersTextBox();
-            button1 = new Button();
+            roundCornersButton1 = new roundCornersButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -87,21 +87,30 @@
             roundCornersTextBox2.TabIndex = 3;
             roundCornersTextBox2.Texts = "";
             // 
-            // button1
+            // roundCornersButton1
             // 
-            button1.Location = new Point(8, 8);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 4;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            roundCornersButton1.BackColor = Color.White;
+            roundCornersButton1.BackgroundColor = Color.White;
+            roundCornersButton1.BorderColor = Color.Gray;
+            roundCornersButton1.BorderFocusColor = Color.Black;
+            roundCornersButton1.BorderRadius = 30;
+            roundCornersButton1.FlatAppearance.BorderSize = 0;
+            roundCornersButton1.FlatStyle = FlatStyle.Flat;
+            roundCornersButton1.HoverColor = Color.LightGray;
+            roundCornersButton1.Location = new Point(1401, 752);
+            roundCornersButton1.Name = "roundCornersButton1";
+            roundCornersButton1.Size = new Size(166, 56);
+            roundCornersButton1.TabIndex = 5;
+            roundCornersButton1.Text = "roundCornersButton1";
+            roundCornersButton1.UseVisualStyleBackColor = false;
+            roundCornersButton1.Click += roundCornersButton1_Click;
             // 
             // loginPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1920, 1080);
-            Controls.Add(button1);
+            Controls.Add(roundCornersButton1);
             Controls.Add(roundCornersTextBox2);
             Controls.Add(roundCornersTextBox1);
             Controls.Add(pictureBox1);
@@ -121,6 +130,6 @@
         private PictureBox pictureBox1;
         private roundCornersTextBox roundCornersTextBox1;
         private roundCornersTextBox roundCornersTextBox2;
-        private Button button1;
+        private roundCornersButton roundCornersButton1;
     }
 }
