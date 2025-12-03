@@ -28,32 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            pictureBox1 = new PictureBox();
             roundCornersTextBox1 = new roundCornersTextBox();
             roundCornersTextBox2 = new roundCornersTextBox();
+            pictureBox1 = new PictureBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(372, 105);
-            label1.Name = "label1";
-            label1.Size = new Size(175, 20);
-            label1.TabIndex = 0;
-            label1.Text = "DIRI IBUTANG AND NEW";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = Properties.Resources.login;
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1920, 1080);
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
             // roundCornersTextBox1
             // 
@@ -81,6 +61,28 @@
             roundCornersTextBox2.TabIndex = 3;
             roundCornersTextBox2.Texts = "";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Image = Properties.Resources.login;
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1920, 1080);
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 20F);
+            label1.Location = new Point(588, 190);
+            label1.Name = "label1";
+            label1.Size = new Size(347, 46);
+            label1.TabIndex = 0;
+            label1.Text = "THIS IS KAASSUSSSSS";
+            label1.Click += label1_Click;
+            // 
             // loginPage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -88,8 +90,8 @@
             ClientSize = new Size(1920, 1080);
             Controls.Add(roundCornersTextBox2);
             Controls.Add(roundCornersTextBox1);
-            Controls.Add(pictureBox1);
             Controls.Add(label1);
+            Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "loginPage";
             Text = "login";
@@ -99,10 +101,9 @@
         }
 
         #endregion
-
-        private Label label1;
-        private PictureBox pictureBox1;
         private roundCornersTextBox roundCornersTextBox1;
         private roundCornersTextBox roundCornersTextBox2;
+        private PictureBox pictureBox1;
+        private Label label1;
     }
 }
