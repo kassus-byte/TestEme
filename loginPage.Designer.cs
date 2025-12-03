@@ -75,9 +75,9 @@
             label1.Font = new Font("Segoe UI", 30F);
             label1.Location = new Point(640, 319);
             label1.Name = "label1";
-            label1.Size = new Size(340, 67);
+            label1.Size = new Size(511, 67);
             label1.TabIndex = 5;
-            label1.Text = "HAHAHAYASS";
+            label1.Text = "HAHAHAsamokaYASS";
             // 
             // loginPage
             // 
