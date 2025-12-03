@@ -15,5 +15,15 @@ namespace TestEme
         {
 
         }
+
+        private void roundCornersTextBox3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void roundCornersTextBox1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

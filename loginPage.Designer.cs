@@ -28,27 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginPage));
             label1 = new Label();
             pictureBox1 = new PictureBox();
             roundCornersTextBox1 = new roundCornersTextBox();
             roundCornersTextBox2 = new roundCornersTextBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(372, 105);
+            label1.Location = new Point(326, 79);
             label1.Name = "label1";
-            label1.Size = new Size(175, 20);
+            label1.Size = new Size(137, 15);
             label1.TabIndex = 0;
             label1.Text = "DIRI IBUTANG AND NEW";
             // 
             // pictureBox1
             // 
             pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = Properties.Resources.login;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(1920, 1080);
             pictureBox1.TabIndex = 1;
@@ -61,12 +64,14 @@
             roundCornersTextBox1.BorderColor = Color.Gray;
             roundCornersTextBox1.BorderFocusColor = Color.Black;
             roundCornersTextBox1.BorderRadius = 35;
-            roundCornersTextBox1.Location = new Point(1243, 399);
+            roundCornersTextBox1.Location = new Point(1332, 417);
+            roundCornersTextBox1.Margin = new Padding(3, 2, 3, 2);
             roundCornersTextBox1.Name = "roundCornersTextBox1";
-            roundCornersTextBox1.Padding = new Padding(10, 7, 10, 7);
-            roundCornersTextBox1.Size = new Size(325, 59);
+            roundCornersTextBox1.Padding = new Padding(9, 5, 9, 5);
+            roundCornersTextBox1.Size = new Size(306, 53);
             roundCornersTextBox1.TabIndex = 2;
             roundCornersTextBox1.Texts = "";
+            roundCornersTextBox1.Load += roundCornersTextBox1_Load;
             // 
             // roundCornersTextBox2
             // 
@@ -74,23 +79,35 @@
             roundCornersTextBox2.BorderColor = Color.Gray;
             roundCornersTextBox2.BorderFocusColor = Color.Black;
             roundCornersTextBox2.BorderRadius = 35;
-            roundCornersTextBox2.Location = new Point(1243, 586);
+            roundCornersTextBox2.Location = new Point(1332, 600);
+            roundCornersTextBox2.Margin = new Padding(3, 2, 3, 2);
             roundCornersTextBox2.Name = "roundCornersTextBox2";
-            roundCornersTextBox2.Padding = new Padding(10, 7, 10, 7);
-            roundCornersTextBox2.Size = new Size(325, 59);
+            roundCornersTextBox2.Padding = new Padding(9, 5, 9, 5);
+            roundCornersTextBox2.Size = new Size(306, 53);
             roundCornersTextBox2.TabIndex = 3;
             roundCornersTextBox2.Texts = "";
             // 
+            // button1
+            // 
+            button1.Location = new Point(8, 8);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 4;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // loginPage
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(button1);
             Controls.Add(roundCornersTextBox2);
             Controls.Add(roundCornersTextBox1);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "loginPage";
             Text = "login";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -104,5 +121,6 @@
         private PictureBox pictureBox1;
         private roundCornersTextBox roundCornersTextBox1;
         private roundCornersTextBox roundCornersTextBox2;
+        private Button button1;
     }
 }
