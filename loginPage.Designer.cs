@@ -53,7 +53,7 @@
             roundCornersTextBox2.BorderColor = Color.Gray;
             roundCornersTextBox2.BorderFocusColor = Color.Black;
             roundCornersTextBox2.BorderRadius = 35;
-            roundCornersTextBox2.Location = new Point(1243, 586);
+            roundCornersTextBox2.Location = new Point(1243, 592);
             roundCornersTextBox2.Name = "roundCornersTextBox2";
             roundCornersTextBox2.Padding = new Padding(10, 7, 10, 7);
             roundCornersTextBox2.Size = new Size(325, 59);
