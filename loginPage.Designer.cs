@@ -31,17 +31,16 @@
             roundCornersTextBox1 = new roundCornersTextBox();
             roundCornersTextBox2 = new roundCornersTextBox();
             pictureBox1 = new PictureBox();
-            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // roundCornersTextBox1
             // 
-            roundCornersTextBox1.BackColor = Color.White;
+            roundCornersTextBox1.BackColor = Color.Black;
             roundCornersTextBox1.BorderColor = Color.Gray;
             roundCornersTextBox1.BorderFocusColor = Color.Black;
             roundCornersTextBox1.BorderRadius = 35;
-            roundCornersTextBox1.Location = new Point(1243, 399);
+            roundCornersTextBox1.Location = new Point(1243, 387);
             roundCornersTextBox1.Name = "roundCornersTextBox1";
             roundCornersTextBox1.Padding = new Padding(10, 7, 10, 7);
             roundCornersTextBox1.Size = new Size(325, 59);
@@ -72,17 +71,6 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 20F);
-            label1.Location = new Point(588, 190);
-            label1.Name = "label1";
-            label1.Size = new Size(347, 46);
-            label1.TabIndex = 0;
-            label1.Text = "THIS IS KAASSUSSSSS";
-            label1.Click += label1_Click;
-            // 
             // loginPage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -90,20 +78,17 @@
             ClientSize = new Size(1920, 1080);
             Controls.Add(roundCornersTextBox2);
             Controls.Add(roundCornersTextBox1);
-            Controls.Add(label1);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "loginPage";
             Text = "login";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
         private roundCornersTextBox roundCornersTextBox1;
         private roundCornersTextBox roundCornersTextBox2;
         private PictureBox pictureBox1;
-        private Label label1;
     }
 }
