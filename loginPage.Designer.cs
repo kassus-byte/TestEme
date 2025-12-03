@@ -49,7 +49,7 @@
             // 
             // roundCornersTextBox2
             // 
-            roundCornersTextBox2.BackColor = Color.White;
+            roundCornersTextBox2.BackColor = Color.Gray;
             roundCornersTextBox2.BorderColor = Color.Gray;
             roundCornersTextBox2.BorderFocusColor = Color.Black;
             roundCornersTextBox2.BorderRadius = 35;
