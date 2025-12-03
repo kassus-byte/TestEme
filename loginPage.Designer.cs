@@ -30,8 +30,8 @@
         {
             roundCornersTextBox1 = new roundCornersTextBox();
             roundCornersTextBox2 = new roundCornersTextBox();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            button1 = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // roundCornersTextBox1
@@ -60,35 +60,45 @@
             roundCornersTextBox2.TabIndex = 3;
             roundCornersTextBox2.Texts = "";
             // 
-            // pictureBox1
+            // button1
             // 
-            pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = Properties.Resources.login;
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1920, 1080);
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            button1.Location = new Point(1293, 337);
+            button1.Name = "button1";
+            button1.Size = new Size(8, 8);
+            button1.TabIndex = 4;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 30F);
+            label1.Location = new Point(640, 319);
+            label1.Name = "label1";
+            label1.Size = new Size(340, 67);
+            label1.TabIndex = 5;
+            label1.Text = "HAHAHAYASS";
             // 
             // loginPage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1920, 1080);
+            Controls.Add(label1);
+            Controls.Add(button1);
             Controls.Add(roundCornersTextBox2);
             Controls.Add(roundCornersTextBox1);
-            Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "loginPage";
             Text = "login";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
         private roundCornersTextBox roundCornersTextBox1;
         private roundCornersTextBox roundCornersTextBox2;
-        private PictureBox pictureBox1;
+        private Button button1;
+        private Label label1;
     }
 }
