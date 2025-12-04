@@ -9,9 +9,11 @@ namespace TestEme.CustomUserControls
     {
         public int BorderRadius { get; set; } = 12;
         public int BorderSize { get; set; } = 2;
-        public Color BorderColor { get; set; } = Color.Gray;
+        public Color BorderColor { get; set; }  = Color.Gray; 
         public Color BackgroundColor { get; set; } = Color.White;
         public Color TextColor { get; set; } = Color.Black;
+        public Color HoverTextColor { get; set; } = Color.White;
+        public Color HoverColor { get; set; } = Color.Green;
 
         public customButton()
         {
@@ -30,7 +32,7 @@ namespace TestEme.CustomUserControls
 
             // Button shapes
             Rectangle rectSurface = new Rectangle(0, 0, Width, Height);
-            Rectangle rectBorder = new Rectangle(1, 1, Width - 2, Height - 2);
+            Rectangle rectBorder = new Rectangle(1, 1, Width - 3, Height - 3);
 
             using (GraphicsPath pathSurface = GetRoundedPath(rectSurface, BorderRadius))
             using (GraphicsPath pathBorder = GetRoundedPath(rectBorder, BorderRadius - 1))
@@ -75,6 +77,22 @@ namespace TestEme.CustomUserControls
         protected override void OnResize(EventArgs e)
         {
             base.OnResize(e);
+            Invalidate();
+        }
+
+        protected override void OnMouseEnter(EventArgs e)
+        {
+            base.OnMouseEnter(e);
+            BackgroundColor = HoverColor;
+            TextColor = HoverTextColor;
+            Invalidate();
+        }
+
+        protected override void OnMouseLeave(EventArgs e)
+        {
+            base.OnMouseLeave(e);
+            BackgroundColor = Color.White;
+            TextColor = Color.Black;
             Invalidate();
         }
     }

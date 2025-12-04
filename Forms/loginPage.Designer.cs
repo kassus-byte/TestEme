@@ -31,6 +31,8 @@
             loginButton = new TestEme.CustomUserControls.customButton();
             passTextBox = new TestEme.CustomUserControls.customTextBox();
             userTextBox = new TestEme.CustomUserControls.customTextBox();
+            loginImage = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)loginImage).BeginInit();
             SuspendLayout();
             // 
             // loginButton
@@ -42,8 +44,9 @@
             loginButton.BorderSize = 2;
             loginButton.FlatAppearance.BorderSize = 0;
             loginButton.FlatStyle = FlatStyle.Flat;
+            loginButton.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             loginButton.ForeColor = Color.Black;
-            loginButton.Location = new Point(565, 358);
+            loginButton.Location = new Point(1335, 752);
             loginButton.Name = "loginButton";
             loginButton.Size = new Size(138, 41);
             loginButton.TabIndex = 3;
@@ -54,13 +57,15 @@
             // 
             // passTextBox
             // 
+            passTextBox.BackColor = Color.Transparent;
             passTextBox.BorderColor = Color.Gray;
             passTextBox.BorderRadius = 10;
             passTextBox.BorderSize = 2;
-            passTextBox.Location = new Point(534, 279);
+            passTextBox.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            passTextBox.Location = new Point(1258, 607);
             passTextBox.Name = "passTextBox";
             passTextBox.Padding = new Padding(8);
-            passTextBox.Size = new Size(200, 35);
+            passTextBox.Size = new Size(292, 53);
             passTextBox.TabIndex = 4;
             passTextBox.Load += passTextBox_Load;
             // 
@@ -69,24 +74,39 @@
             userTextBox.BorderColor = Color.Gray;
             userTextBox.BorderRadius = 10;
             userTextBox.BorderSize = 2;
-            userTextBox.Location = new Point(534, 217);
+            userTextBox.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            userTextBox.Location = new Point(1258, 424);
             userTextBox.Name = "userTextBox";
             userTextBox.Padding = new Padding(8);
-            userTextBox.Size = new Size(200, 35);
+            userTextBox.Size = new Size(292, 53);
             userTextBox.TabIndex = 5;
             userTextBox.Load += userTextBox_Load;
+            // 
+            // loginImage
+            // 
+            loginImage.Dock = DockStyle.Fill;
+            loginImage.Image = Properties.Resources.login;
+            loginImage.Location = new Point(0, 0);
+            loginImage.Name = "loginImage";
+            loginImage.Size = new Size(1920, 1080);
+            loginImage.TabIndex = 6;
+            loginImage.TabStop = false;
+            loginImage.Click += loginImage_Click;
             // 
             // loginPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(998, 596);
+            ClientSize = new Size(1920, 1080);
             Controls.Add(userTextBox);
             Controls.Add(passTextBox);
             Controls.Add(loginButton);
+            Controls.Add(loginImage);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "loginPage";
             Text = "loginPage";
             Load += loginPage_Load;
+            ((System.ComponentModel.ISupportInitialize)loginImage).EndInit();
             ResumeLayout(false);
         }
 
@@ -94,5 +114,6 @@
         private CustomUserControls.customButton loginButton;
         private CustomUserControls.customTextBox passTextBox;
         private CustomUserControls.customTextBox userTextBox;
+        private PictureBox loginImage;
     }
 }

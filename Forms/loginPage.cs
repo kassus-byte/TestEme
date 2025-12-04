@@ -14,7 +14,7 @@ namespace TestEme
     {
         public loginPage()
         {
-            InitializeComponent();
+            InitializeComponent();  
         }
 
         private void userTextBox_Load(object sender, EventArgs e)
@@ -34,28 +34,34 @@ namespace TestEme
 
         private void loginButton1_Click(object sender, EventArgs e)
         {
-            string username = userTextBox.Text.Trim();
+            string[] validUsers = { "brynt", "kass", "aiks", "admin" };
             string password = passTextBox.Text.Trim();
+            string username = userTextBox.Text.Trim();
 
-            // Simple hardcoded check
-            if (username == "admin" && password == "1234")
+            //checks if username exists in array AND password is correct
+            if (Array.Exists(validUsers, u => u == username) && password == "1234")
             {
-                MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Login successful!", "LOST AND FOUND SYSTEM", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Open dashBoard form
+                //opens dashboard
                 dashBoard dashboardForm = new dashBoard();
                 dashboardForm.Show();
 
-                // Hide login form
-                this.Hide();
-                dashboardForm.FormClosed += (s, args) => Application.Exit();
+                this.Hide();//hides previous form ( login form )
+
+                dashboardForm.FormClosed += (s, args) => Application.Exit();//app wont stay on memory
             }
             else
             {
-                MessageBox.Show("Invalid username or password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid username or password.", "LOST AND FOUND SYSTEM", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 passTextBox.Text = "";
                 passTextBox.Focus();
             }
+        }
+
+        private void loginImage_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

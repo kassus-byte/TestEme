@@ -15,7 +15,7 @@ namespace TestEme.CustomUserControls
             BorderColor = Color.Gray;
             BorderSize = 2;
             BorderRadius = 10; //corners
-            Padding = new Padding(8);
+            Padding = new Padding(10);
 
             innerTextBox.BorderStyle = BorderStyle.None;
             innerTextBox.Font = Font;
@@ -60,7 +60,7 @@ namespace TestEme.CustomUserControls
 
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
 
-            Rectangle rect = new Rectangle(0, 0, Width - 1, Height - 1);
+            Rectangle rect = new Rectangle(0, 0, Width - 2, Height - 2);
 
             using (GraphicsPath path = GetPath(rect, BorderRadius))
             using (Pen pen = new Pen(BorderColor, BorderSize))
